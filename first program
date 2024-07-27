@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int study = 0, game = 0; 
+    char choice;
+
+    while (true) {
+        cout << "Enter 'O' to study, 'X' to game, or 'E' to exit: ";
+        cin >> choice;
+        if (choice == 'O') {
+            cout << "Study time starts!" << endl;
+            study++;         } 
+        else if (choice == 'X') {
+            cout << "Game time starts!" << endl;
+            game++;
+        } 
+        else if (choice == 'E') {
+            cout << "Exiting" << endl;
+            break;
+        } 
+        else {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    }
+    cout << "Total study sessions: " << study << endl;
+    cout << "Total game sessions: " << game << endl;
+
+    return 0;
+}
